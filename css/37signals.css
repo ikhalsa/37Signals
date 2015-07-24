@@ -1,6 +1,54 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 * {
-	margin: 0;
+	margin: 0%;
 	padding: 0;
 }
 body {
@@ -13,15 +61,15 @@ a {
 }
 
 section {
-	margin: 20px auto;
-	width: 825px;
+	margin: 0 10%;
+	width: 70%;
 	display: block;
 }
 
 hr {
 	background: white url(../img/img-hr.png) no-repeat 50%;
 	border: 0;
-	height: 12px;
+	height: .5em;
 	clear: both;
 }
 
@@ -33,13 +81,16 @@ sup {
 
 nav ul {
 	float: right;
-	margin: 12px;
-	padding: 10px 30px;
+	margin: 2.25%;
+	margin-left: 0;
+	padding-right: 1.5%;
+	padding-left: 0;
+	width: 36%;
 }
 
 nav li {
-	margin: 15px 5px;
-	padding: 5px 4px;
+	margin: 0 1.5%;
+	padding-left: 0;
 	font-size: 12px;
 	display: inline;
 	color: #369;
@@ -60,8 +111,7 @@ nav li a:hover {
 
 header {
 	clear: both;
-	width: 829px;
-	height: 163px;
+	width: 90%;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -69,20 +119,23 @@ header {
 header h1 {
 	font-size: 58px;
 	line-height: 1em;
-	letter-spacing: -2px;
-	margin: 10px 0 20px 0;
+	letter-spacing: -.03em;
+	margin: 1% 12% 1%;
+	text-align: center;
+	width: 75%;
 }
 
 header h5 {
 	font-size: 20px;
 	line-height: 1.5em;
-	margin: 10px 0;
+	margin: 1% 0 -2.5%;
 }
 
 .products {
 	text-align: center;
 	height: 288px;
-	padding-bottom: 30px;
+	margin: 0 24.5% -.5%;
+	padding-bottom: 3%;
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 
@@ -91,7 +144,7 @@ header h5 {
 	color: #369;
 	font-weight: bold;
 	line-height: 1.5em;
-	margin: 0 0 10px 0;
+	margin: 0 0 3% 0;
 }
 
 .products h3 span {
@@ -99,7 +152,7 @@ header h5 {
 }
 
 .products h4 {
-	margin: 5px 0 10px;
+	margin: 3% 0 3%;
 	font-size: 14px;
 	color: #C00;
 }
@@ -115,11 +168,8 @@ header h5 {
 }
 
 .products a {
-	position: relative;
-	top: 40px;
-	left: 75px;
-	width: 160px;
-	margin: 15px 20px 5px;
+	width: 18%;
+	margin: 6% 2% .25%;
 	float: left;
 	border: 1px solid #E8E8E8;
 	border-radius: 5px;
@@ -136,7 +186,8 @@ header h5 {
 }
 
 .customers {
-	margin-bottom: 50px;
+	margin: 0 15% 1%;
+
 }
 
 .customers h2 {
@@ -145,7 +196,7 @@ header h5 {
 	font-weight: 600;
 	font-style: normal;
 	line-height: 1.1em;
-	letter-spacing: -1px;
+	letter-spacing: -.02em;
 	text-align: center;
 }
 
@@ -160,13 +211,13 @@ header h5 {
 
 .meet {
 	position: absolute;
-	margin-left: -125px;
-	margin-top: -100px;
+	margin-left: -7%;
+	margin-top: -8%;
 }
 
 .meet a {
 	display: block;
-	width: 143px;
+	width: 130%;
 	height: 104px;
 	background: url('../img/img-customers.png') no-repeat 0 0;
 	text-indent: -1000em;
@@ -180,6 +231,8 @@ header h5 {
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 	font-size: 10px;
 	font-weight: 400;
+	margin-left: 10%;
+	width: 130%;
 	line-height: 1.3em;
 	text-align: center;
 	color: #369C;
@@ -191,10 +244,9 @@ header h5 {
 }
 
 .arrow-left {
-	width: 69px;
-	height: 36px;
 	position: relative;
 	top: -35px;
+	left: 5%;
 }
 
 .globe {
@@ -202,10 +254,12 @@ header h5 {
 	vertical-align: top;
 }
 
+.logos {
+	margin: 0 5% 1%;
+}
+
 .manifesto {
-	margin-top: 0;
-	margin-bottom: 50px;
-	padding-left: 15px;
+	margin: 0 15% 2%;
 	overflow: hidden;
 }
  .manifesto h2 {
@@ -216,13 +270,13 @@ header h5 {
 	line-height: 1.1em;
 	letter-spacing: -1px;
 	text-align: center;
-	margin: 30px 0;
+	margin: 2% 0;
  }
 
  .column1 {
-	width: 380px;
+	width: 43%;
 	float: left;
-	margin-right: 40px;
+	margin: 0 5%;
 	text-align: center;
 	color: #222;
 	font-size: 18px;
@@ -231,7 +285,7 @@ header h5 {
 
 .column2 {
 	margin-right: 0px;
-	width: 380px;
+	width: 43%;
 	float: left;
 	text-align: center;
 	color: #222;
@@ -240,26 +294,25 @@ header h5 {
  }
 
  .manifesto h3 {
-	padding-left: 5px;
-	width: 25px;
+	padding-left: .55%;
+	width: 7.5%;
 	float: left;
 	font-size: 58px;
 	font-weight: 600;
 	line-height: normal;
-	margin: -10px 15px 0 0;
+	margin: -4% 6% 4% 1%;
 	color: #CCC;
  }
 
  .manifesto h4 {
  	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 	font-size: 16px;
-	margin: 7px 0 0;
+	margin: 3% 0 0;
 	color: #C00;
 	text-align: left;
  }
 
  .manifesto p {
-	margin: 0 0 0 45px;
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 	text-align: left;
 	line-height: 1.4em;
@@ -268,32 +321,35 @@ header h5 {
  }
 
   .rework {
-	height: 500px;
+	margin: 1% 15% -10%;
  }
  
  .rework  h2{
 	color: #232323;
-	margin: 30px 0;
 	font-size: 48px;
 	font-weight: 600;
 	font-style: normal;
 	line-height: 1.1em;
 	letter-spacing: -1px;
 	text-align: center;
+	margin: 0 5%;
  }
  
 .book {
-	width: 293px;
-	height: 400px;
+	width: 32.38%;
+	height: auto;
 	float:left;
+	margin-top: 3%;
+	margin-bottom: -3%;
  }
  
 .quotes {
-	padding-top: 5px;
+	padding-top: 5%;
 	text-align: center;
 	color: #222;
 	font-size: 18px;
 	line-height: 1.5em;
+	width: 90%;
 }
 
 .quotes h3 {
@@ -302,7 +358,7 @@ header h5 {
 	font-family: "Times New Roman", Georgia, serif;
 	font-style: italic;
 	font-size: 22px;
-	margin: 35px 0 10px;
+	margin: 5% 0 1%;
 }
 
 .quotes p {
@@ -316,15 +372,23 @@ header h5 {
 	height: 36px;
 	position: relative;
 	top: -465px;
-	left: 750px;
+	left: 88%;
+}
+
+.arrow-right img {
+	margin-top: 35%;
 }
 
 .crumple {
 	position: relative;
-	top: -530px;
-	left: 800px;
-	width: 143px;
-	height: 145px;
+	top: -425px;
+	left: 95%;
+	width: 15%;
+}
+
+.crumple img {
+	margin-top: -600%;
+
 }
 
 .crumple p {
@@ -343,7 +407,8 @@ header h5 {
 
 .offerings h2 {
 	color: #232323;
-	margin: 30px 0;
+	width: 90%;
+	margin: 1% 12%;
 	font-size: 48px;
 	font-weight: 600;
 	font-style: normal;
@@ -353,17 +418,16 @@ header h5 {
  }
 
  .main-offerings {
-	width: 570px;
-	height: 213px;
+	width: 90%;
+	height: 23%;
 	clear: both;
 	overflow: hidden;
-	margin: auto;
-	margin-bottom: 20px;
+	margin: 2% 29% 4%;
  }
 
   .main-offerings a {
-	width: 160px;
-	margin: 5px;
+	width: 17.68%;
+	margin: .55%;
 	float: left;
 	padding: 0 10px;
 	text-decoration: none;
@@ -374,7 +438,7 @@ header h5 {
 
 .main-offerings h3 {
 	font-size: 21px;
-	margin: 3px 0 0 10px;
+	margin: .33% 0 0 1.11%;
 	color: #222;	
 	font-weight: bold;
 }
@@ -384,7 +448,7 @@ header h5 {
 }
 
 .main-offerings h4 {
-	margin: 5px 0;
+	margin: .55% 0;
 	font-size: 14px;
 	color: #C00;
 }
@@ -408,27 +472,29 @@ header h5 {
 
 .offerings .column1 {
 	float: left;
-	width: 300px;
+	width: 33.15%;
 	padding: 0;
-	margin-right: 30px;
-	margin-left: 95px;
-	margin-bottom: 30px;
+	margin-right: 8%;
+	margin-left: 20%;
+	margin-bottom: 1%;
+	margin-top: -2%;
 	text-align: center;
 }
 
 .offerings .column2 {
 	float: left;
-	width: 300px;
+	width: 33.15%;
 	padding: 0;
 	margin-right: 0;
 	margin-left: 0;
-	margin-bottom: 30px;
+	margin-bottom: 1%;
+	margin-top: -2%;
 	text-align: center;
 }
 
 .offerings .column1 li,
 .offerings .column2 li {
-	padding: 8px 0;
+	padding: .884% 0;
 	list-style-type: none;
 	margin: 0;
 	font-size: 12px;
@@ -454,8 +520,8 @@ header h5 {
 }
 
 footer {
-	margin: 30px auto;
-	width: 825px;
+	margin: 1% auto;
+	width: 90%;
 	display: block;
 	text-align: center;
 	line-height: 1.5em;
@@ -464,7 +530,7 @@ footer {
 footer h3 {
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 	font-size: 14px;
-	margin: 5px 0;
+	margin: .55% 0;
 	color: #C00;
 }
 
@@ -472,7 +538,7 @@ footer li {
 	list-style-type: none;
 	font-size: 12px;
 	margin: 0;
-	padding: 5px 0;
+	padding: .55% 0;
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 
@@ -488,11 +554,11 @@ footer p {
 	font-size: 10px;
 	color: #999;
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-	margin-top: 50px;
+	margin-top: 0;
 }
 
 a.hover-box {
-	box-shadow: 0 0 15px #333;
+	box-shadow: 0 0 1.66% #333;
 }
 
 .hidden {
@@ -501,10 +567,10 @@ a.hover-box {
 
 div.extra {
 	clear: both;
-	width: 829px;
-	height: 163px;
+	width: 90%;
+	height: 18%;
 	margin: 0 auto;
-	padding: 6px 0;
+	padding: .66% 0;
 	text-align: center;
 }
 
@@ -515,7 +581,7 @@ div.extra {
 
 .extra h1 {
 	color: #222;
-	margin: 10px 0 15px 0;
+	margin: 1.105% 0 1.6575% 0;
 	font-size: 46px;
 	letter-spacing: -1px;
 	font-weight: 500;
@@ -528,36 +594,36 @@ div.extra {
 	font-size: 15px;
 	color: #222;
 	line-height: 1.4em;
-	margin-top: 5px;
+	margin-top: .5525%;
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 	text-align: center;
 }
 
 .right-arrow {
 	position: relative;
-	top: 5px;
-	right: 140px;
+	top: .5525%;
+	right: 15.47%;
 	z-index: 1;
 }
 
 .right-arrow-b {
 	position: absolute;
-	top: 290px;
-	right: 510px;
+	top: 32.045%;
+	right: 56.355%;
 	z-index: 1;
 }
 
 .left-arrow {
 	position: absolute;
-	top: 290px;
-	right: 440px;
+	top: 32.045%;
+	right: 48.62%;
 	z-index: 1;
 }
 
 .pbox {
 	font-size: 14px;
 	line-height: 1.4em;
-	margin-top: 5px;
+	margin-top: .5525%;
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 	text-align: center;
 	border: 2px solid #ccc;
@@ -568,6 +634,201 @@ div.extra {
 	color: #336699;
 }
 
+/*responsive quaries*/
 
+@media (max-width: 415px) {
 
+	nav ul {
+	margin: 2.25%;
+	margin-left: 100%;
+	padding-right: 0;
+	padding-left: 0;
+	width: 100%;
+}
 
+nav li {
+	margin: 0 5% 0 1%;
+	padding-left: 6%;
+	font-size: 12px;
+	display: inline;
+	color: #369;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.story,
+.system {
+		display: none;
+	}
+
+header h1 {
+	font-size: 50px;
+	margin: 1% 12% 1%;
+}
+
+header img {
+	width: 80%;
+	margin: 5% 0;
+}
+
+.products a {
+	width: 100%;
+	margin: 5% 2% 5% -16.5%;
+
+}
+
+.customers > p {
+	margin-top: 20px;
+}
+.meet {
+	margin-left: 20%;
+	margin-top: 5%;
+}
+
+.meet a {
+	display: none;
+}
+
+.meet p {
+	display: none;
+}
+
+.globe,
+.arrow-left,
+.logos {
+	display: none;
+}
+
+.logos {
+	width: 350px;
+	margin: 0 5% 1%;
+}
+
+.manifesto h3 {
+	padding-left: .55%;
+	width: 7.5%;
+	float: left;
+	font-size: 58px;
+	font-weight: 600;
+	line-height: normal;
+	margin: -4% 6% 11.5% 1%;
+	color: #CCC;
+ }
+
+.column1 {
+	width: 100%;
+	float: left;
+	margin: 0 1%;
+	text-align: center;
+	color: #222;
+	font-size: 18px;
+	line-height: 1.5em;
+ }
+
+.manifesto h3 {
+	padding-left: .55%;
+	width: 7.5%;
+	float: left;
+	font-size: 58px;
+	font-weight: 600;
+	line-height: normal;
+	margin: -4% 6% 11.5% 1%;
+	color: #CCC;
+ }
+
+.column2 {
+	width: 100%;
+	float: left;
+	margin: 0 1%;
+	text-align: center;
+	color: #222;
+	font-size: 18px;
+	line-height: 1.5em;
+ }
+
+ .manifesto p {
+ 	margin-left: 43px;
+ }
+
+ .rework {
+	margin-bottom: 20px;
+ }
+ 
+ .crumple,
+ .arrow-right {
+ 	display: none;
+ }
+
+ .book {
+	float:none;
+	margin-bottom: -50px;
+ }
+
+.quotes h3 {
+	margin: 5% 0 1% 25px;
+	font-size: 24px;
+ }
+
+ .offerings {
+	margin: auto;
+}
+
+.offerings h2 {
+	margin: 10px auto 0;
+}
+
+ .main-offerings {
+ 	margin: auto;
+ }
+ .main-offerings a {
+	width: 100%;
+	margin: 10% 2% 10% -5%;
+}
+
+.offerings .column1 {
+	width: 44%;
+	margin-right: 4%;
+	margin-left: 2%;
+	margin-bottom: 1%;
+	margin-top: -2%;
+	line-height: 1.25em;
+}
+
+.offerings .column2 {
+	width: 44%;
+	margin-right: 2%;
+	margin-left: 4%;
+	margin-bottom: 1%;
+	margin-top: -2%;
+	line-height: 1.8em;
+}
+
+footer ul, h3 {
+	display: none;
+}
+
+}
+
+}
+
+/*.offerings .column1 {
+	float: left;
+	width: 33.15%;
+	padding: 0;
+	margin-right: 8%;
+	margin-left: 20%;
+	margin-bottom: 1%;
+	margin-top: -2%;
+	text-align: center;
+}
+
+.offerings .column2 {
+	float: left;
+	width: 33.15%;
+	padding: 0;
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 1%;
+	margin-top: -2%;
+	text-align: center;
+}
+*/
